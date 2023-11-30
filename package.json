@@ -1,7 +1,7 @@
 {
   "name": "pro_writing_aid_ts",
   "version": "2.0.0",
-  "description": "Official api.prowritingaid.com typescript SDK",
+  "description": "Fork of the Official api.prowritingaid.com typescript SDK",
   "license": "Apache-2.0",
   "keywords": [
     "prowritingaid",
@@ -11,25 +11,21 @@
     "pwa",
     "style"
   ],
-  "author": "Orpheus Technology LTD <hello@prowritingaid.com> (https://prowritingaid.com)",
+  "author": "pharmbot",
   "repository": {
     "type": "git",
-    "url": "https://github.com/prowriting/prowritingaid.typescript.git"
+    "url": "https://github.com/pharmbot/prowritingaid.typescript.git"
   },
   "main": "api.js",
   "scripts": {
     "postinstall": "typings install",
     "clean": "rd /s/q node_modules && rd /s/q typings",
-    "build": "tsc",
-    "test": "npm run build && mocha --recursive --timeout 100000"
+    "build": "tsc"
   },
   "dependencies": {
-    "bluebird": "^3.3.5",
-    "request": "^2.72.0"
+    "axios": "^1.6.2"
   },
   "devDependencies": {
-    "chai": "^4.0.2",
-    "mocha": "^3.4.2",
     "ts-node": "^3.2.0",
     "typescript": "^2.4.1",
     "typings": "^2.1.1"
